@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+$background: #121c27;
+$text: #f3f3f3;
+$inactive: #7f7979;
+$font: "Outfit", "Helvetica Neue", sans-serif;
+
 option[value=""] {
   display: none;
+}
+
+body {
+  background-color: $background;
+  font-family: $font;
+  color: $text;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+select {
+  background-color: #121c27;
+  color: $text;
+  font-size: 1rem;
+  font-family: $font;
+  border: 1px solid $inactive;
+  padding: 0.2rem;
+  border-radius: 0.25rem;
+
+  &,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active,
+  &:focus-visible {
+    border: 1px solid $text;
+    transition: 0.2s ease border;
+  }
 }
