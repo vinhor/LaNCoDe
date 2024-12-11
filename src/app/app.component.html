@@ -1,20 +1,34 @@
+<h1>LaNCoDe</h1>
+<p>Languages' naming convention determiner</p>
+
 <form name="main-form" [formGroup]="mainForm">
-  <select
-    id="lang-select"
-    name="lang-select"
-    formControlName="language"
-    (change)="handleLanguageChange()"
-  >
-    <option value="" selected disabled>Pick a language</option>
-    <option value="js">JavaScript/TypeScript</option>
-    <option value="html">HTML</option>
-  </select>
+  <p>
+    <select
+      id="lang-select"
+      name="lang-select"
+      formControlName="language"
+      (change)="handleLanguageChange()"
+    >
+      <option value="" selected disabled>Pick a language</option>
+      <option value="js">JavaScript/TypeScript</option>
+      <option value="html">HTML</option>
+    </select>
+  </p>
   @if (mainForm.value.language) {
-  <select name="concept" id="concept" formControlName="concept">
-    <option value="" selected disabled>Pick a concept</option>
-    @for (concept of concepts[mainForm.value.language]; track concept) {
-    <option [value]="concept">{{ concept | titlecase }}</option>
-    }
-  </select>
+  <p>
+    <select name="concept" id="concept" formControlName="concept">
+      <option value="" selected disabled>Pick a concept</option>
+      @for (concept of concepts[mainForm.value.language]; track concept) {
+      <option [value]="concept">{{ concept | titlecase }}</option>
+      }
+    </select>
+  </p>
   }
 </form>
+
+@if (mainForm.value.language && mainForm.value.concept) {
+<p>
+  You should use
+  {{ conventions[mainForm.value.language][mainForm.value.concept] }}
+</p>
+}
