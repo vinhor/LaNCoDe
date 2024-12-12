@@ -10,7 +10,7 @@ import * as mainJSON from './main.json';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   formBuilder = inject(FormBuilder);
   title = 'LaNCoDe';
   concepts = mainJSON.concepts;
