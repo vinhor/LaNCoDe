@@ -1,8 +1,10 @@
 @use "./styles.scss";
 $code-background: #292929;
+$variable: #ff723b;
+$function: #bae087;
 
-.var {
-  color: #ff723b;
+.keyword {
+  color: $variable;
 }
 
 .name {
@@ -18,6 +20,25 @@ $code-background: #292929;
   border-radius: 0.25rem;
   padding: 0.25rem;
   overflow: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.brackets {
+  color: #daa761;
+}
+
+.special-operator {
+  color: $variable;
+}
+
+.special-keyword {
+  color: #da3939;
+}
+
+.function {
+  color: $function;
 }
 
 code {

@@ -4,7 +4,8 @@
     "html": ["class", "id", "name"]
   },
   "js": {
-    "variable": "camelCase"
+    "variable": "camelCase",
+    "function": "camelCase"
   },
   "html": {}
 }
