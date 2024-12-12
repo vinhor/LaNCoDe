@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CamelCaseComponent } from './camel-case.component';
+import { JavaScriptComponent } from './java-script.component';
 
-describe('CamelCaseComponent', () => {
-  let component: CamelCaseComponent;
-  let fixture: ComponentFixture<CamelCaseComponent>;
+describe('JavaScriptComponent', () => {
+  let component: JavaScriptComponent;
+  let fixture: ComponentFixture<JavaScriptComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CamelCaseComponent]
+      imports: [JavaScriptComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CamelCaseComponent);
+    fixture = TestBed.createComponent(JavaScriptComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

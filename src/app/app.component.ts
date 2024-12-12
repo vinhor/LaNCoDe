@@ -1,12 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TitleCasePipe } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder } from '@angular/forms';
-import { CamelCaseComponent } from './camel-case/camel-case.component';
+import { JavaScriptComponent } from './java-script/java-script.component';
 import * as mainJSON from './main.json';
 
 @Component({
   selector: 'app-root',
-  imports: [ReactiveFormsModule, TitleCasePipe, CamelCaseComponent],
+  imports: [ReactiveFormsModule, TitleCasePipe, JavaScriptComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
