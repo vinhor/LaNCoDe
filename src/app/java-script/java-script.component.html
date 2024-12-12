@@ -1,12 +1,15 @@
 @if (concept() === "variable") {
-<code
-  ><span class="keyword">let </span><span class="name">numberOfEmployes</span> =
-  <span class="number">52</span></code
->
+<pre>
+<code><span class="keyword">let </span><span class="name">numberOfEmployes</span> = <span class="number">52</span></code>
+</pre>
 } @else if (concept() === "function") {
-<pre class="code__pre">
+<pre>
 <code><span class="keyword">const</span> <span class="function">increaseEmployeeCounter</span> = <span class="brackets">()</span> <span class="special-operator">=></span> <span class="brackets">&#123;</span>
   <span class="special-keyword">return</span> <span class="name">numberOfEmployes</span>++
 <span class="brackets">&#125;</span></code
 ></pre>
+} @else if (concept() === "constant") {
+<pre>
+<code><span class="keyword">const</span> <span class="name">PRODUCT_MANAGER</span> = <span class="string">"Anna Mayer"</span></code>
+</pre>
 }

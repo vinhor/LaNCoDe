@@ -5,7 +5,8 @@
   },
   "js": {
     "variable": "camelCase",
-    "function": "camelCase"
+    "function": "camelCase",
+    "constant": "UPPER_CASE"
   },
   "html": {}
 }
