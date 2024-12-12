@@ -5,7 +5,7 @@
 } @else if (concept() === "function") {
 <pre>
 <code><span class="keyword">const</span> <span class="function">increaseEmployeeCounter</span> = <span class="brackets">()</span> <span class="special-operator">=></span> <span class="brackets">&#123;</span>
-  <span class="special-keyword">return</span> <span class="name">numberOfEmployes</span>++
+  <span class="special-keyword">return</span> <span class="name">numberOfEmployes</span><span class="operator">++</span>
 <span class="brackets">&#125;</span></code
 ></pre>
 } @else if (concept() === "constant") {
@@ -20,5 +20,17 @@
     <span class="keyword">this</span>.<span class="name">level</span> = <span class="number">6</span>
   <span class="brackets">&#125;</span>
 <span class="brackets">&#125;</span>
+</pre>
+} @else if (concept() === "type") {
+<pre>
+<code><span class="keyword">type</span> <span class="special-name">EngineersSeniority</span> = <span class="string">"Junior"</span> <span class="operator">|</span> <span class="string">"Senior"</span></code>
+</pre>
+} @else if (concept() === "interface") {
+<pre>
+<code><span class="keyword">interface</span> <span class="special-name">ColorRgb</span> <span class="brackets">&#123;</span>
+  <span class="name">red</span><span class="operator">:</span> <span class="special-name">number</span>
+  <span class="name">green</span><span class="operator">:</span> <span class="special-name">number</span>
+  <span class="name">blue</span><span class="operator">:</span> <span class="special-name">number</span>
+<span class="brackets">&#125;</span></code>
 </pre>
 }

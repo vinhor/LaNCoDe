@@ -7,7 +7,9 @@
     "variable": "camelCase",
     "function": "camelCase",
     "constant": "UPPER_CASE",
-    "class": "PascalCase"
+    "class": "PascalCase",
+    "type": "PascalCase",
+    "interface": "PascalCase"
   },
   "html": {}
 }
