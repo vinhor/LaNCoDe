@@ -11,5 +11,9 @@
     "type": "PascalCase",
     "interface": "PascalCase"
   },
-  "html": {}
+  "html": {
+    "class": "kebab-case",
+    "id": "kebab-case",
+    "name": "kebab-case"
+  }
 }

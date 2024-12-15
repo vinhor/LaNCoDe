@@ -30,8 +30,10 @@
 <p>
   You should use
   {{ conventions[mainForm.value.language][mainForm.value.concept] }}
-  @if (mainForm.value.language === "js") {
+  @switch (mainForm.value.language) { @case ("js") {
   <app-java-script [concept]="mainForm.value.concept" />
-  }
+  } @case ("html") {
+  <app-html [concept]="mainForm.value.concept" />
+  } }
 </p>
 }
