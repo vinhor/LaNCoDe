@@ -1,7 +1,7 @@
 {
   "concepts": {
     "js": ["constant", "variable", "function", "class", "type", "interface"],
-    "html": ["class", "id", "name"]
+    "html": ["class", "id", "name", "file"]
   },
   "js": {
     "variable": "camelCase",
@@ -14,6 +14,7 @@
   "html": {
     "class": "kebab-case",
     "id": "kebab-case",
-    "name": "kebab-case"
+    "name": "kebab-case",
+    "file": "kebab-case"
   }
 }
