@@ -1,18 +1,18 @@
-@if (concept() === "variable") {
+@switch (concept()) { @case ("variable") {
 <pre>
-<code><span class="keyword">let </span><span class="name">numberOfEmployes</span> = <span class="number">52</span></code>
+<code><span class="keyword">let</span> <span class="name">numberOfEmployes</span> = <span class="number">52</span></code>
 </pre>
-} @else if (concept() === "function") {
+} @case ("function") {
 <pre>
 <code><span class="keyword">const</span> <span class="function">increaseEmployeeCounter</span> = <span class="brackets">()</span> <span class="special-operator">=></span> <span class="brackets">&#123;</span>
   <span class="special-keyword">return</span> <span class="name">numberOfEmployes</span><span class="operator">++</span>
 <span class="brackets">&#125;</span></code
 ></pre>
-} @else if (concept() === "constant") {
+} @case ("constant") {
 <pre>
 <code><span class="keyword">const</span> <span class="name">PRODUCT_MANAGER</span> = <span class="string">"Anna Mayer"</span></code>
 </pre>
-} @else if (concept() === "class") {
+} @case ("class") {
 <pre>
 <code><span class="keyword">class</span> <span class="special-name">SeniorEngineer</span> <span class="brackets">&#123;</span>
   <span class="keyword">constructor</span><span class="brackets">(</span><span class="name">name</span><span class="brackets">) &#123;</span></code>
@@ -21,11 +21,11 @@
   <span class="brackets">&#125;</span>
 <span class="brackets">&#125;</span>
 </pre>
-} @else if (concept() === "type") {
+} @case ("type") {
 <pre>
 <code><span class="keyword">type</span> <span class="special-name">EngineersSeniority</span> = <span class="string">"Junior"</span> <span class="operator">|</span> <span class="string">"Senior"</span></code>
 </pre>
-} @else if (concept() === "interface") {
+} @case ("interface") {
 <pre>
 <code><span class="keyword">interface</span> <span class="special-name">ColorRgb</span> <span class="brackets">&#123;</span>
   <span class="name">red</span><span class="operator">:</span> <span class="special-name">number</span>
@@ -33,4 +33,4 @@
   <span class="name">blue</span><span class="operator">:</span> <span class="special-name">number</span>
 <span class="brackets">&#125;</span></code>
 </pre>
-}
+} }
